@@ -1,0 +1,341 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .navbar-item {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+  }
+  
+  .navbar-item:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  
+  /* Dropdown Styles */
+  .navbar-dropdown {
+    position: relative;
+  }
+  
+  .dropdown-toggle {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 8px 15px;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .dropdown-item {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #555;
+  }
+  
+  /* Toggle Dropdown */
+  .navbar-dropdown:hover .dropdown-menu {
+    display: flex;
+  }
+  
+  /* Responsive Styles */
+  .navbar-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navbar-menu {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  
+    .navbar-menu.active {
+      display: flex;
+    }
+  
+    .navbar-toggle {
+      display: block;
+    }
+  }
+
+  /* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Banner Styles */
+  .banner {
+    position: relative;
+    background: url('abstract-1920x1080-gradient-wallpaper-preview-removebg-preview.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay for better text contrast */
+  }
+  
+  .banner-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .banner-content h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  .banner-content p {
+    font-size: 1.25rem;
+    margin: 15px 0;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff5733;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #ff3412;
+  }
+  
+  /* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  .content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Section Title and Description */
+  .content h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Project Gallery */
+  .project-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .project {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Responsive Button Styles */
+  .responsive-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .responsive-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .responsive-button {
+      width: 100%;
+      font-size: 1.2rem;
+      padding: 15px;
+    }
+  
+    .project {
+      width: 100%; /* Make project cards stack */
+    }
+  }
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    height: 50vh;
+}
+
+.section:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.content {
+    max-width: 50%;
+    animation: fadeIn 1.5s;
+}
+
+.side-image {
+    max-width: 40%;
+}
+
+.side-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.project-gallery {
+    display: flex;
+    gap: 10px;
+}
+
+.project {
+    padding: 20px;
+    background: #f0f0f0;
+    border-radius: 5px;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
