@@ -2,7 +2,7 @@
 
 const Buttons = () => {
     return (
-      <div abc></div>
+      // <div abc></div>
       <div style={{ fontFamily: "Arial, sans-serif", padding: "20px" }}>
         <h1 style={{ fontSize: "24px", marginBottom: "20px" }}>Button Variants</h1>
   
